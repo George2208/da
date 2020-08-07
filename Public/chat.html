@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="chat.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script defer src="chat.js"></script>
+</head>
+<body>
+    <div id="chat">
+        <div id="messageBox"></div>
+        <form id="messageForm">
+            <div id="textarea" role="textbox" contenteditable></div>
+            <label for="room">Select room: </label>
+            <select id="room">
+                <option value="1">room1</option>
+                <option value="2">room2</option>
+                <option value="3">room3</option>
+            </select>
+            <button>Send</button>
+        </form>
+    </div>
+</body>
+</html>
